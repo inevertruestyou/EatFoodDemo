@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ele_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.laowa.eatfooddemo.mainpageone.SearchActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:background="#0096FF"
+        android:id="@+id/frame_bg"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_gravity="center|left"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/tv_search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ele_search_bg"
+            android:gravity="center"
+            android:textColor="@color/bg_black"
+            android:hint="搜索商家、商品名称"
+            android:padding="10dp"
+            android:textColorHint="@color/text_gray"/>
+
+
+        <TextView
+            android:id="@+id/main_search"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:layout_gravity="center|right"
+            android:text="搜索"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/frame_content_bg"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="我是搜索页"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>
