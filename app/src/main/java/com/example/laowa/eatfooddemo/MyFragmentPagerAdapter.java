@@ -1,5 +1,6 @@
 package com.example.laowa.eatfooddemo;
 
+import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -7,24 +8,27 @@ import android.view.ViewGroup;
 
 /**
  *
- * Created by Jay on 2015/8/31 0031.
+ * 页面布局管理器
  */
 
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private final int PAGER_COUNT = 4;
+    private final int PAGER_COUNT = 3;
     private MyFragment1 myFragment1 = null;
     private MyFragment2 myFragment2 = null;
-    private MyFragment3 myFragment3 = null;
     private MyFragment4 myFragment4 = null;
+    SharedPreferences preferences;
+ //   private MyFragment4 myFragment4 = null;
 
 
-    public MyFragmentPagerAdapter(FragmentManager fm) {
+    public MyFragmentPagerAdapter(FragmentManager fm,SharedPreferences preferences) {
         super(fm);
+        this.preferences = preferences;
         myFragment1 = new MyFragment1();
         myFragment2 = new MyFragment2();
-        myFragment3 = new MyFragment3();
-        myFragment4 = new MyFragment4();
+        myFragment4 = new MyFragment4(preferences);
+
+   //     myFragment4 = new MyFragment4();
     }
 
 
@@ -40,7 +44,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        super.destroyItem(container, position, object);
+//         super.destroyItem(container, position, object);       //滑动完毕后销毁前一个页面
     }
 
     @Override
@@ -54,15 +58,12 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
                 fragment = myFragment2;
                 break;
             case MainActivity.PAGE_THREE:
-                fragment = myFragment3;
-                break;
-            case MainActivity.PAGE_FOUR:
                 fragment = myFragment4;
                 break;
+//            case MainActivity.PAGE_FOUR:
+//                fragment = myFragment4;
         }
         return fragment;
     }
-
-
 }
 

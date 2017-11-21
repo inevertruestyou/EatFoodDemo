@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefcf7">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0096FF">
+
+        <Button
+            android:id="@+id/setting_back_up"
+            android:layout_width="30dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:background="@mipmap/back1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人信息"
+            android:textSize="20dp"
+            android:textColor="@color/bg_black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical">
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:background="#e9e9e9"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="#e9e9e9"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="#e9e9e9"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="#e9e9e9"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+
+            <!--<View-->
+                <!--android:layout_width="360dp"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#CCCCCC"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+            <RelativeLayout
+                android:id="@+id/change_user_six"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                >
+                <TextView
+                    android:id="@+id/user_safe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户与安全"
+                    android:textSize="18dp"
+                    android:textColor="#272727"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="360dp"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_gravity="center"
+                />
+            <RelativeLayout
+                android:id="@+id/change_user_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                >
+                <TextView
+                    android:id="@+id/user_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="通用"
+                    android:textSize="18dp"
+                    android:textColor="#272727"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#CCCCCC"
+                />
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="#e9e9e9"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="#e9e9e9"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+
+            <!--<View-->
+                <!--android:layout_width="360dp"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#CCCCCC"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+
+            <!--<View-->
+                <!--android:layout_width="360dp"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#CCCCCC"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="#e9e9e9"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="#e9e9e9"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+            <RelativeLayout
+                android:id="@+id/change_user_personalized_signature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+                <TextView
+                    android:id="@+id/user_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关于吃堂"
+                    android:textSize="18dp"
+                    android:textColor="#272727"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+            <!--<View-->
+                <!--android:layout_width="360dp"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#CCCCCC"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="5dp"-->
+                <!--android:background="#e9e9e9"-->
+                <!--android:layout_gravity="center"-->
+                <!--/>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#CCCCCC"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e94141"
+            android:text="注销登陆"/>
+
+
+    </LinearLayout>
+</LinearLayout>

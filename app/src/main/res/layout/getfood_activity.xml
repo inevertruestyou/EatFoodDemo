@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.laowa.eatfooddemo.getfoods.GetFoodActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#0096FF"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/food_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/arrow_right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.14"
+                android:gravity="center"
+                android:text="取餐"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="请前往3号窗口，凭借666取餐码取餐"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

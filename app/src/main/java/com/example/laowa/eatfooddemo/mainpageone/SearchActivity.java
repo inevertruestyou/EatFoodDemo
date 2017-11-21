@@ -3,11 +3,13 @@ package com.example.laowa.eatfooddemo.mainpageone;
 import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.app.Instrumentation;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -15,7 +17,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.laowa.eatfooddemo.R;
+import com.example.laowa.eatfooddemo.ordermeal.OrderMealActivity;
 
+import static com.example.laowa.eatfooddemo.Constant.sichuan_normal_university;
 
 public class SearchActivity extends AppCompatActivity {
     private EditText edit_search;
@@ -27,6 +31,7 @@ public class SearchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.fg_content_search);
 
         edit_search = (EditText) findViewById(R.id.tv_search_bg);
@@ -37,7 +42,14 @@ public class SearchActivity extends AppCompatActivity {
         btn_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SearchActivity.this, "你点击了搜索", Toast.LENGTH_SHORT).show();
+                String search = edit_search.getText().toString().trim();
+                if (!search.equals("")) {
+                    Intent intent = new Intent(getBaseContext(), OrderMealActivity.class);
+                    intent.putExtra("name1", "龙湖食堂");
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(SearchActivity.this, "你什么都还没有输入呢", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -58,7 +70,6 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onGlobalLayout() {
                 edit_search.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-
                 performEnterAnimation();
             }
         });

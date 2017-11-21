@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.laowa.eatfooddemo.myfriends.MyFriendsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50dp"
+        android:background="#0096FF"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/get_back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:background="@mipmap/back1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="我的好友"
+            android:gravity="center"
+            android:textSize="@dimen/margin_25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myfriends_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</LinearLayout>

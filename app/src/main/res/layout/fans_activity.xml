@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/follow_fans_back"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/back1"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/follow_fans_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="粉丝"
+            android:textSize="25sp"
+            android:textColor="#454444"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_fans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

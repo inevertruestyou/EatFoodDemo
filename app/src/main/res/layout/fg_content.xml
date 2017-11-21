@@ -2,13 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_white"
+    android:background="@color/text_white"
     android:orientation="vertical">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="horizontal">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -34,8 +29,10 @@
                 android:text="搜索商家、商品名称" />
 
             <TextView
+                android:id="@+id/go_to_meal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="true"
                 android:layout_gravity="bottom"
                 android:gravity="center"
                 android:text="铁板烧  冒菜  炒饭  盖浇饭  卤肉  面食"
@@ -61,53 +58,71 @@
             </LinearLayout>
         </FrameLayout>
 
-    </LinearLayout>
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="80dp">
 
         <GridView
             android:id="@+id/menu_grid_main"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:columnWidth="80dp"
+            android:numColumns="3"
+            android:stretchMode="spacingWidthUniform">
 
         </GridView>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="40dp"
+            android:orientation="vertical">
 
-            <ProgressBar
-                android:id="@+id/progressBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
             <TextView
+                android:background="#fedfe3da"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:text="今日特色菜" />
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="今日特色菜"
+                android:textSize="20sp" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:backgroundTint="#fe477518"
+            android:orientation="vertical">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/main_recyclerview_specialdishes"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.89"
+                android:background="@color/bg_gray"/>
 
-            </android.support.v7.widget.RecyclerView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+
         </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

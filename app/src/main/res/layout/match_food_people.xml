@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0096FF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="约饭吧"
+            android:textColor="#000000" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/match_people_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/match_people_pic"
+                android:src="@drawable/xiaotang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="昵称："
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/match_people_name"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="小堂堂" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="约饭评分："
+                    android:textColor="#000000" />
+
+                <RatingBar
+                    android:id="@+id/match_people_numstar"
+                    android:isIndicator="true"
+                    android:layout_width="100sp"
+                    android:layout_height="20sp"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5"
+                    style="@style/myRatingBar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_weight="10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="约饭宣言："
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/edit_match_people"
+                    android:src="@mipmap/modify"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/match_talk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="诚信约饭，顿顿精品" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/match_people_start"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/match_people"
+            android:background="#0096FF" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/match_people_message"
+            android:textColor="#ffb700"
+            android:gravity="center"
+            android:background="#0096FF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/match_people_recyclerview"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

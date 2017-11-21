@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#cccccc"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="选择"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dialog_boy_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f2f1f1f1"
+        >
+        <TextView
+            android:id="@+id/dialog_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="boy"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_gravity="center"
+        ></View>
+    <RelativeLayout
+        android:id="@+id/dialog_girl_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f2f1f1f1"
+        >
+        <TextView
+            android:id="@+id/dialog_girl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="girl"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

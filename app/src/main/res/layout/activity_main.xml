@@ -5,14 +5,12 @@
     tools:context=".MainActivity">
 
 
-
-
     <RadioGroup
         android:id="@+id/rg_tab_bar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="53dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/bg_white"
+        android:background="@color/text_white"
         android:orientation="horizontal">
 
         <RadioButton
@@ -27,17 +25,18 @@
             android:drawableTop="@drawable/tab_menu_message"
             android:text="@string/tab_menu_profile" />
 
-        <RadioButton
-            android:id="@+id/rb_better"
-            style="@style/tab_menu_item"
-            android:drawableTop="@drawable/tab_menu_better"
-            android:text="@string/tab_menu_pay" />
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_idea"-->
+            <!--style="@style/tab_menu_item"-->
+            <!--android:drawableTop="@drawable/tab_menu_better"-->
+            <!--android:text="@string/tab_menu_setting" />-->
 
         <RadioButton
             android:id="@+id/rb_setting"
             style="@style/tab_menu_item"
             android:drawableTop="@drawable/tab_menu_setting"
-            android:text="@string/tab_menu_setting" />
+            android:text="@string/tab_menu_message" />
 
     </RadioGroup>
 

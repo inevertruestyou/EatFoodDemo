@@ -2,23 +2,76 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.laowa.eatfooddemo">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_tang"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".mainpageone.SearchActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".MainActivity">
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.PersonShowActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.FansActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.FollowActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.PersonMessageActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".chatrom.ChatRoom"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.lidong.photopicker.PhotoPickerActivity" />
+        <activity android:name="com.lidong.photopicker.PhotoPreviewActivity" />
+        <activity android:name=".matchpeople.view.MatchPeopleActivity">
+            <intent-filter>
+                <action android:name="com.example.laowa.eatfooddemo.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mainpageone.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".mainpageone.FoodComplaintActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".pagetwo.MatchPeoplePage"
+            android:label="@string/title_activity_match_people_page"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".mainpageone.PersonalMainpage"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".friendscircle.SendFriend" />
+        <activity android:name=".shopcar.ShopCarActivity" />
+        <activity android:name=".ordermeal.OrderMealActivity" />
+        <activity android:name=".payment.Payment_meal" />
+        <activity android:name=".friendscircle.FriendsCircleActivity" />
+        <activity android:name=".orderform.Evaluate" />
+        <activity android:name=".orderform.OrderForm" />
+        <activity android:name=".matchPeoplegoto.MatchPeoplegoto" />
+        <activity android:name=".myfriends.MyFriendsActivity" />
+        <activity android:name=".setting.SettingMainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".resgister.ResgisterActivity" />
+        <activity android:name=".getfoods.GetFoodActivity"/>
+        <activity android:name=".setting.AccountAndSecurity"/>
+        <activity android:name=".setting.RevisePasswprdActivity"/>
+        <activity android:name=".setting.VersionActivity"/>
     </application>
 
 </manifest>

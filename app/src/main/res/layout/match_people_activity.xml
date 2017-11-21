@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/back_match_people"
+                android:layout_margin="@dimen/margin_10dp"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/back1"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="horizontal">
+
+     <LinearLayout
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:background="@drawable/turnplate_bg_left"
+         android:gravity="center"
+         android:orientation="vertical">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:text="饭友"
+             android:textColor="#ffffff"
+             android:textSize="20dp" />
+
+         <TextView
+             android:id="@+id/match_people_message"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="@dimen/margin_5dp"
+             android:layout_marginTop="5dp"
+             android:gravity="center"
+             android:text="你的饭友以上线"
+             android:textAlignment="textStart"
+             android:textColor="#ffffff"
+             android:textSize="13.5dip"
+             tools:ignore="RtlCompat" />
+     </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.example.laowa.eatfooddemo.matchpeople.view.CircleMenuLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/turnplate_bg_right" >
+
+            <RelativeLayout
+                android:id="@id/id_circle_menu_item_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/match_people"
+                    android:layout_width="104.0dip"
+                    android:layout_height="104.0dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/turnplate_center_unlogin" />
+
+            </RelativeLayout>
+        </com.example.laowa.eatfooddemo.matchpeople.view.CircleMenuLayout>
+    </FrameLayout>
+ </LinearLayout>
+</LinearLayout>
